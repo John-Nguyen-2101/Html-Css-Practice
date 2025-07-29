@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/homestyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../js/action.js">
+</head>
+<body>
+    <header>
+        <div>img</div>
+    </header>
+    <nav>
+       <div class="container">
+        <ul class="nav_bar">
+            <li class="menu"><a href=""><i class='bx bx-menu'></i>MENU</a>
+                 <ul class="menu_sub">
+                    <li><a href="">menu1</a></li>
+                    <li><a href="">menu2</a></li>
+                    <li><a href="">menu3</a></li>
+                    <li><a href="">menu4</a></li>
+                    <li><a href="">menu5</a>
+                        <ul class="menu_sub-son">
+                            <li><a href="">sub1</a></li>
+                            <li><a href="">sub2</a></li>
+                            <li id="sub3" onclick="show()" style="color: aliceblue;">sub3</li>
+                        </ul>
+                    </li>
+                 </ul>
+            </li>
+            <li><select name="TP" id="TP">
+                <option value="Ho chi minh"><a href="">Ho chi minh</a></option>
+                <option value="Dak Nong"><a href="">Dak Nong</a></option>
+                <option value="Dak Nong"><a href="">Ha noi</a></option>
+                <option value="Dak Nong"><a href="">Dong nai</a></option>
+            </select></li>
+            <li><input type="text" placeholder="Search..."><i class='bx bx-search' ></i></li>
+            <li><button onclick="showmode()"><i class='bx bx-cart-add' ></i>Giỏ hàng</button></li>
+            <li><a href="">Lịch sử<p>đơn hàng</p></a></li>
+            <li><a href=""><span class="button_parent"><span class="button_son"></span></span>Mua thẻ nạp ngay!</a></li>
+            <li><a href="">24h Công nghệ</a></li>
+            <li><a href="#" onclick="showmode()">Hỏi đáp</a></li>
+            <li><a href="">Game apps</a></li>
+          
+        </ul>
+        <div id="hoidap-form">
+            <div class="hoidap-form-content">
+                <h2>Information <span id="cl" onclick="hidemode()">X Close</span></h2>
+                <form action="">
+                    <select name="" id="" class="select">
+                        <option value="">Tinh Thanh</option>
+                        <option value="">Dak Nong</option>
+                        <option value="">Nha Trang</option>
+                    </select>
+                    <select name="" id="" class="select">
+                        <option value="">Huyen</option>
+                        <option value="">Dak Nong</option>
+                        <option value="">Nha Trang</option>
+                    </select>
+                    <select name="" id="" class="select">
+                        <option value="">Xa</option>
+                        <option value="">Dak Nong</option>
+                        <option value="">Nha Trang</option>
+                    </select>
+                    <input id="ip" type="text" placeholder="Nhap dia chi cua ban">
+                    <button class="button">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="Buynow-mode">
+            <div class="Buynow-mode-form">
+                <h2 class="mode2">ADD CART <Span class="xclose">X Close</Span></h2>
+                <form action="">
+                    <input type="text"> <span>Amount</span>
+                    <input type="text"> <span>Amount</span>
+                    <button>Submit</button>
+                </form>
+            </div>
+           
+        </div>
+       </div>
+    </nav>
+    <div id="content"><p>day la toi <button onclick="hide()">OK</button></p></div>
+    <div class="main">
+        <div class="iterm iterm1">
+            <img src="../img/Untitled-1.png" alt="anh">
+            <p class="iterm-content">this is content</p>
+            <p class="price">$99</p>
+            <button class="buybtn btn1">BUY NOW</button>
+
+        </div>
+        <div class="iterm iterm2">
+            <img src="../img/Untitled-1.png" alt="anh">
+            <p class="iterm-content">this is content</p>
+            <p class="price">$99</p>
+            <button class="buybtn btn2">BUY NOW</button>
+
+        </div>
+        <div class="iterm iterm3">
+            <img src="../img/Untitled-1.png" alt="anh">
+            <p class="iterm-content">this is content</p>
+            <p class="price">$99</p>
+            <button class="buybtn btn3">BUY NOW</button>
+
+        </div>
+        <div class="iterm iterm4">
+            <img src="../img/Untitled-1.png" alt="anh">
+            <p class="iterm-content">this is content</p>
+            <p class="price">$99</p>
+            <button class="buybtn btn4">BUY NOW</button>
+
+        </div>
+        <div class="iterm iterm5">
+            <img src="../img/Untitled-1.png" alt="anh">
+            <p class="iterm-content">this is content</p>
+            <p class="price">$99</p>
+            <button class="buybtn btn5">BUY NOW</button>
+
+        </div>
+        <div class="iterm iterm6">
+            <img src="../img/Untitled-1.png" alt="anh">
+            <p class="iterm-content">this is content</p>
+            <p class="price">$99</p>
+            <button class="buybtn btn6">BUY NOW</button>
+
+        </div>
+    </div>
+    <script src="../js/action.js"></script>
+</body>
+</html>

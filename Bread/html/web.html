@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website'John</title>
+    <link rel="stylesheet" href="../html/orderonline.html">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../js/js.js">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- this is cart order detail  -->
+    <div class="cart-detail_add" id="detail-cart">
+        <form action="">
+            <table class="order-iterm-cart">
+                <thead>
+                    <tr class="color-row">
+                        <td>STT</td>
+                        <td>Images</td>
+                        <td>Product name</td>
+                        <td>Amount</td>
+                        <td>price</td>
+                        <td>Total</td>
+                    </tr>
+                </thead>
+                <tbody id="mycart">
+
+                </tbody>
+            </table>
+        </form>
+     </div>
+    <!-- this is cart  -->
+    <div class="cart" onclick="displaycart()"><span class="add-cart"><i class='bx bx-cart-add' ></i><span id="countsp">0</span></span></div>
+    <!-- this is order online  -->
+     <div class="order-online" id="orderonline">
+        <div class="order-online_detail">
+            <div class="main-titles"><h1>Career application</h1> <span ><a id="closex" onclick="change()">Close X</a></span></div>
+            <p class="titles" id="mail">Email:</p>
+            <input class="titles ip" type="text" placeholder="">
+            <p class="titles" id="phonenumber">Phone number:</p>
+            <input class="titles ip" type="number" placeholder="">
+            <p class="titles" id="firstname">First name:</p>
+            <input class="titles ip" type="text" placeholder="">
+            <p class="titles" id="lastname">Last name:</p>
+            <input class="titles ip" type="text" placeholder="">
+            <span>Address: <select name="" id=""><option value="Sydney">Sydney</option>
+                <option value="Melbourn">Melbourn</option>
+                <option value="Adelaide">Adelaide</option></select>
+                <span>Sex: <input type="radio" name="sexs" value="1">Male <input type="radio" name="sexs" value="2">Female</span>
+            </span>
+            <br>
+            <button onclick="change()" class="btn1">Submit</button>
+        </div>
+     </div>    <!-- this is header -->
+    <div id="header-wrapper">
+        <div id="header" class="container">
+            <div id="header-parents">
+                <div id="image-logo"><img src="../img/LOGO1.png" alt=""></div>
+                <div class="titles"><h1>Welcome to Luca’s Loaves</h1></div>
+            </div>
+            <div id="menu">
+                <span class="menu_sub"><i class='bx bx-menu'></i>
+                  <ul class="menu-sub_list">
+                    <li><a href="">menu1</a></li>
+                    <li><a href="">menu2</a></li>
+                    <li><a href="">menu3</a></li>
+                    <li><a href="">menu4</a></li>
+                    <li><a href="">menu5</a></li>
+                    <li><a href="">menu6</a>
+                       <ul class="sub-sub1">
+                        <li><a href="">sub1</a></li>
+                        <li><a href="">sub2</a></li>
+                        <li><a href="">sub3</a></li>
+                        <li><a href="">sub4</a></li>
+                       </ul>
+                    </li>
+                    <li><a href="">menu7</a></li>
+                    <li><a href="">menu8</a></li>
+                  </ul>
+                </span>
+                <ul class="nav">
+                    <li ><a href="../html/web.html">Home</a></li>
+                    <li><a href="#">About US</a></li>
+                    <li><a onclick="change()" >Careers </a></li>
+                    <li><a href="../html/orderonline.html">Order online </a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- this is main body -->
+     <div class="body-wrapper">
+        <div class="products">
+            <div class="product-iterm iterm1">
+                <img class="img-product" src="../img/b1.jpg" alt="">
+                <p class="discrib discrib1">this is BREAD 1</p>
+                <p class="price price1">$<span>99</span><input class="amounts" type="number" min="1" max="20" value="1"></p>
+                
+                <button onclick="addcart(this)">ADD TO CART</button>
+            </div>
+            <div class="product-iterm iterm1">
+                <img class="img-product" src="../img/b2.jpg" alt="">
+                <p class="discrib discrib1">this is BREAD 2</p>
+                <p class="price price1">$<span>33</span><input class="amounts" type="number" min="1" max="20" value="1"></p>
+                
+                <button onclick="addcart(this)">ADD TO CART</button>
+            </div>
+            <div class="product-iterm iterm1">
+                <img class="img-product" src="../img/b3.jpg" alt="">
+                <p class="discrib discrib1">this is BREAD 1</p>
+                <p class="price price1">$<span>56</span><input class="amounts" type="number" min="1" max="20" value="1"></p>
+                
+                <button onclick="addcart(this)">ADD TO CART</button>
+            </div>
+            <div class="product-iterm iterm1">
+                <img class="img-product" src="../img/b4.jpg" alt="">
+                <p class="discrib discrib1">this is BREAD 1</p>
+                <p class="price price1">$<span>11</span><input class="amounts" type="number" min="1" max="20" value="1"></p>
+                
+                <button onclick="addcart(this)">ADD TO CART</button>
+            </div>
+            <div class="product-iterm iterm1">
+                <img class="img-product" src="../img/b5.jpg" alt="">
+                <p class="discrib discrib1">this is BREAD 1</p>
+                <p class="price price1">$<span>66</span><input class="amounts" type="number" min="1" max="20" value="1"></p>
+                
+                <button onclick="addcart(this)">ADD TO CART</button>
+            </div>
+            <div class="product-iterm iterm1">
+                <img class="img-product" src="../img/b6.jpg" alt="">
+                <p class="discrib discrib1">this is BREAD 1</p>
+                <p class="price price1">$<span>28</span><input class="amounts" type="number" min="1" max="20" value="1"></p>
+                
+                <button onclick="addcart(this)">ADD TO CART</button>
+            </div>
+            <div class="product-iterm iterm1">
+                <img class="img-product" src="../img/b7.jpg" alt="">
+                <p class="discrib discrib1">this is BREAD 1</p>
+                <p class="price price1">$<span>35</span><input class="amounts" type="number" min="1" max="20" value="1"></p>
+                
+                <button onclick="addcart(this)">ADD TO CART</button>
+            </div>
+            <div class="product-iterm iterm1">
+                <img class="img-product" src="../img/b8.jpg" alt="">
+                <p class="discrib discrib1">this is BREAD 1</p>
+                <p class="price price1">$<span>25</span><input class="amounts" type="number" min="1" max="20" value="1"></p>
+                
+                <button onclick="addcart(this)">ADD TO CART</button>
+            </div>
+            <div class="product-iterm iterm1">
+                <img class="img-product" src="../img/b1.jpg" alt="">
+                <p class="discrib discrib1">this is BREAD 1</p>
+                <p class="price price1">$<span>66</span><input class="amounts" type="number" min="1" max="20" value="1"></p>
+                
+                <button onclick="addcart(this)">ADD TO CART</button>
+            </div>
+            <div class="product-iterm iterm1">
+                <img class="img-product" src="../img/b2.jpg" alt="">
+                <p class="discrib discrib1">this is BREAD 10</p>
+                <p class="price price1">$<span>45</span><input class="amounts" type="number" min="1" max="20" value="1"></p>
+                
+                <button onclick="addcart(this)">ADD TO CART</button>
+            </div>
+            
+        </div>
+     </div>
+     <script src="../js/js.js"></script>
+</body>
+</html>

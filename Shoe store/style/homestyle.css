@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    background-color: yellow;
+    text-align: center;
+}
+/* nav */
+nav{
+    background-color: black;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    font-size: 12px;
+    color: aliceblue;
+    text-decoration: none;
+}
+nav ul li:nth-child(3){
+    position: relative;
+    
+}
+nav ul li:nth-child(3) input{
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 5px;
+   
+}
+nav ul li:nth-child(3) i{
+    position: absolute;
+    color: rgb(11, 11, 11);
+    right: 10px;
+    line-height: 30px;
+    font-size: 20px;
+}
+nav ul li:nth-child(4) button{
+    height: 28px;
+    padding: 0 8px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+
+}
+nav ul li:nth-child(4) button i{
+    margin-right: 10px;
+}
+nav ul li:nth-child(4) button:hover{
+    background-color: rgb(45, 43, 43);
+}
+nav ul li:nth-child(5){
+    text-align: center;
+}
+nav ul li:nth-child(5):hover a{
+    color: #FFF200;
+}
+nav ul li:nth-child(6) a{
+    color: #FFF200;
+}
+.button_parent{
+    position: relative;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    display: block;
+    background-color: #FFF200;
+    float: left;
+    margin-top: 4px;
+    margin-right: 5px ;
+}
+.button_son{
+    position: absolute;
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+    animation: effects 2s linear infinite;
+}
+@keyframes effects {
+    from {
+        opacity: 0.4;
+    }
+    to{
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+nav ul li:nth-child(7):hover a,li:nth-child(8):hover a,li:nth-child(9):hover a{
+    color: #FFF200;
+}
+#TP{text-align: center;
+    height: 28px;
+    background-color: transparent;
+    color: aliceblue;
+    outline: white;
+    border-radius: 8px;
+  
+}
+/* menu */
+.menu{
+    padding: 5px;
+    text-align: center;
+    position: relative;}
+.menu i{
+    font-size: 15px; 
+}
+.menu_sub{
+    margin-left: -1px;
+    text-align: center;
+    margin-top: 6px; ;
+   position: absolute;
+    background: black;
+    display: none;
+}
+.menu_sub li{
+    border-top: 1px solid gray;
+    position: relative;
+    padding: 12px;
+}
+.menu:hover .menu_sub{
+    display: block;
+}
+.menu:hover .menu_sub li a{
+    color: aliceblue;
+}
+.menu .menu_sub li:hover{
+    background-color: rgb(55, 57, 59);
+}
+
+.menu_sub-son{
+    position: absolute;
+    display: none;
+    background-color: black;
+    left: 74px;
+    top: 0;
+}
+.menu .menu_sub li:hover .menu_sub-son{
+    display: block;
+}
+#sub3{
+    cursor: pointer;
+}
+/* option */
+option{
+    background-color: black;
+}
+.menu a{
+    font-size: 16px;
+}
+.menu a i{
+    margin-right: 6px;
+    font-size: 15px;
+}
+/* ::content */
+#content{
+    background-color: blue;
+    color: wheat;
+    text-align: center;
+    font-size: 16px;
+    display: none;
+}
+/* .hoidap-form */
+#hoidap-form{
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    top: 20px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    display: none;
+    justify-content: center;
+}
+.hoidap-form-content{
+    position: absolute;
+    width: 400px;
+    height: 350px;
+    border-radius: 5px;
+    background-color: rgba(249, 249, 249,0.8);
+    top: 30px;
+}
+h2{
+    position: relative;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(154, 141, 141, 0.8);
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+
+}
+#cl{
+    position: absolute;
+    display: block;
+    top: 0;
+    right:5px;
+    border: 1px solid rgba(154, 141, 141, 0.8);
+    border-radius: 3px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+#cl:hover{
+    background-color: #7d7dba;
+    color: white;
+}
+form{
+    padding: 0 40px;
+}
+.hoidap-form-content form input,.select{
+    text-align: center;
+    padding: 0 10px;
+    width: 100%;
+    height: 40px;
+    display: block;
+    margin-top: 20px;
+    border: 1px solid rgba(154, 141, 141, 0.8);
+}
+.hoidap-form-content form .button{
+    width: 80%;
+    height: 30px;
+    border: 1px solid rgba(154, 141, 141, 0.8);
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+.hoidap-form-content form select option{
+    background-color: white;
+   outline: rgb(14, 12, 12);
+    color: black;
+}
+.hoidap-form-content form .button:hover{
+    background-color: #7d7dba;
+    color: white;
+}
+.bx-search:hover{
+    cursor:wait;
+
+}
+/* ::content */
+.main{
+    margin-top: 20px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.iterm{
+    padding: 10px 10px;
+    text-align: center;
+    flex-basis: 15%;
+    flex-wrap: wrap;
+    color: rgb(80, 80, 161);
+}
+img{
+    max-width: 100%;
+}
+.iterm-content,.price{
+    font-weight: bold;
+    text-align: center;
+    cursor: default;
+}
+.iterm-content:hover,.price:hover{
+    text-decoration: underline;
+    color: rgb(205, 44, 44);
+}
+img:hover{
+    transform:translate(-20px,-40px) rotate(-25deg);
+}
+.buybtn{
+    color: aliceblue;
+    background-color: rgb(18, 148, 55);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+.buybtn:hover{
+    background-color: rgb(22, 175, 65);
+    color: red;
+}
+.Buynow-mode{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+}
+.Buynow-mode-form{
+padding:0 20px;
+width: 400px;
+height: 400px;
+border-radius: 10px;
+background-color: rgba(249, 249, 249,0.8);
+}
+.mode2{
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+.xclose{
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+}
+
